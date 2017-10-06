@@ -1,0 +1,17 @@
+
+
+<h1>Reviews for {{coffee.brand}}:</h1>
+<table class ="table table-striped">
+<tr>
+<th> Reviewer:</th>
+<th> Comment: </th>
+<th> Rating: </th>
+</tr>
+<tbody>
+<tr ng-repeat = "review in reviews">
+<td> {{review.reviewer}}</td>
+<td> {{review.comment}}</td>
+<td> {{review.rating}}</td>
+<tr>
+</tbody>
+</table>

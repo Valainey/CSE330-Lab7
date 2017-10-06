@@ -1,0 +1,26 @@
+
+
+Search: <input type ="text" ng-model ="search.name" placeholder ="search coffees"/>
+<style>
+th {
+color: blue;
+}
+</style>
+<table class= "table table-striped">
+<tr>
+<th>Reviews:</th>
+<th>Brand:</th>
+<th>Coffee Title:</th>
+<th>Country: </th>
+</tr>
+<tbody>
+<tr ng-repeat="coffee in coffees |filter:search | orderBy: 'name' ">
+<td><a href="#/view2/{{coffee.id}}">Reviews</a></td>
+<td> {{coffee.brand}}</td>
+<td> {{coffee.name}}</td>
+<td> {{coffee.country}}</td>
+</tr>
+</tbody>
+</table>
+
+
